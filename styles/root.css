@@ -146,6 +146,12 @@ textarea {
 	resize: none;
 }
 
+label {
+	display: block;
+	margin-top: var(--item_space_med);
+	padding: var(--item_space_small);
+}
+
 input,
 textarea,
 select,
@@ -157,7 +163,6 @@ option {
 	background-color: var(--whitenop_dark);
 	border-radius: var(--border_radius);
 	padding: var(--item_space_min_med);
-	margin-top: var(--item_space_med);
 }
 
 select option[value=""] {

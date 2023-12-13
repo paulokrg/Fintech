@@ -39,21 +39,22 @@
 					action="#"
 					onsubmit="alert('Handle Submit'); return false;"
 				>
+					<label for="title">Título:</label>
 					<input
 						id="title"
 						type="text"
 						name="title"
-						placeholder="Titulo"
+						placeholder="Título"
 						required
 					/>
-					<input
-						id="date"
-						type="date"
-						name="date"
-						placeholder="dd/mm/aaaa"
-						required
-					/>
+
+					<label for="date">Data:</label>
+					<input id="date" type="date" name="date" required />
+
+					<label for="time">Horário:</label>
 					<input id="time" type="time" name="time" />
+
+					<label for="value">Valor:</label>
 					<input
 						id="value"
 						type="number"
@@ -61,15 +62,19 @@
 						placeholder="Valor"
 						required
 					/>
+
+					<label for="category">Categoria:</label>
 					<select id="category" name="category" required>
 						<option value="" disabled selected hidden>
-							Categoria
+							Selecione uma opção...
 						</option>
 						<option value="salarios">Salários</option>
 						<option value="vendas">Vendas</option>
 						<option value="investimentos">Investimentos</option>
 						<option value="freelance">Freelance</option>
 					</select>
+
+					<label for="description">Descrição:</label>
 					<textarea
 						id="description"
 						type="text"
@@ -79,6 +84,7 @@
 						rows="5"
 						required
 					></textarea>
+
 					<button class="main" type="submit">Salvar</button>
 				</form>
 			</section>
