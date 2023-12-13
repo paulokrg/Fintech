@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<head>
+			<link rel="preconnect" href="https://fonts.googleapis.com" />
+			<link
+				rel="preconnect"
+				href="https://fonts.gstatic.com"
+				crossorigin
+			/>
+			<link
+				href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap"
+				rel="stylesheet"
+			/>
+			<meta charset="UTF-8" />
+			<link rel="stylesheet" href="../styles/root.css" />
+			<link rel="stylesheet" href="../styles/loggedOut.css" />
+			<link rel="stylesheet" href="../styles/global.css" />
+			<meta
+				name="viewport"
+				content="width=device-width, initial-scale=1.0"
+			/>
+			<title>Fintech - Cadastro</title>
+		</head>
+	</head>
+	<body>
+		<div class="container flex flex-a-center flex-j-center">
+			<div class="content">
+				<header>
+					<h1>Cadastro</h1>
+					<p class="center">
+						Cadastre-se para começar a gerenciar sua vida
+						financeira.
+					</p>
+				</header>
+				<main>
+					<form>
+						<input
+							type="text"
+							name="name"
+							id="name"
+							placeholder="Nome"
+						/>
+						<input
+							type="email"
+							name="email"
+							id="email"
+							placeholder="Email"
+						/>
+						<div class="input_wrapper">
+							<input
+								type="password"
+								name="password"
+								id="password"
+								placeholder="Senha"
+							/>
+							<button type="button"></button>
+						</div>
+						<div class="input_wrapper">
+							<input
+								type="password"
+								name="confirm_password"
+								id="confirm_password"
+								placeholder="Repetir senha"
+							/>
+							<button type="button"></button>
+						</div>
+						<button class="main" type="submit">
+							<a
+								class="flex flex-a-center flex-j-center"
+								href="index.html"
+							>
+								Cadastrar usuário
+							</a>
+						</button>
+					</form>
+				</main>
+				<footer class="register flex flex-column flex-a-center">
+					<a class="link" href="index.html">Ir para login</a>
+				</footer>
+			</div>
+		</div>
+	</body>
+</html>
