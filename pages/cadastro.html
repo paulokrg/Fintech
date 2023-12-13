@@ -34,18 +34,26 @@
 					</p>
 				</header>
 				<main>
-					<form>
+					<form
+						id="form_sign_up"
+						name="form_sign_up"
+						method="post"
+						action="#"
+						onsubmit="alert('Handle Submit'); return false;"
+					>
 						<input
 							id="name"
 							type="text"
 							name="name"
 							placeholder="Nome"
+							required
 						/>
 						<input
 							id="email"
 							type="email"
 							name="email"
 							placeholder="Email"
+							required
 						/>
 						<div class="input_wrapper">
 							<input
@@ -53,6 +61,7 @@
 								type="password"
 								name="password"
 								placeholder="Senha"
+								required
 							/>
 							<button type="button"></button>
 						</div>
@@ -62,16 +71,12 @@
 								type="password"
 								name="confirm_password"
 								placeholder="Repetir senha"
+								required
 							/>
 							<button type="button"></button>
 						</div>
 						<button class="main" type="submit">
-							<a
-								class="flex flex-a-center flex-j-center"
-								href="index.html"
-							>
-								Cadastrar usuário
-							</a>
+							Cadastrar usuário
 						</button>
 					</form>
 				</main>
