@@ -13,9 +13,19 @@
 				rel="stylesheet"
 			/>
 			<meta charset="UTF-8" />
-			<link rel="stylesheet" href="../styles/root.css" />
-			<link rel="stylesheet" href="../styles/loggedOut.css" />
-			<link rel="stylesheet" href="../styles/global.css" />
+			<script src="https://cdn.tailwindcss.com"></script>
+			<script>
+				tailwind.config = {
+					theme: {
+						extend: {
+							backgroundImage: {
+								divisor:
+									"linear-gradient(90deg, #1A1A1B 0%, #0D63A5 50%, #1A1A1B 100%)",
+							},
+						},
+					},
+				};
+			</script>
 			<meta
 				name="viewport"
 				content="width=device-width, initial-scale=1.0"
@@ -24,16 +34,20 @@
 		</head>
 	</head>
 	<body>
-		<div class="container flex flex-a-center flex-j-center">
-			<div class="content">
+		<div
+			class="w-full h-screen flex items-center justify-center px-[20px] bg-[#1A1A1B]"
+		>
+			<div class="flex flex-col w-full max-w-[600px]">
 				<header>
-					<h1>Cadastro</h1>
-					<p class="center">
+					<h1 class="text-2xl text-[#F2F2F2] font-bold text-center">
+						Cadastro
+					</h1>
+					<p class="text-[#F2F2F2] text-center text-sm mt-[14px]">
 						Cadastre-se para começar a gerenciar sua vida
 						financeira.
 					</p>
 				</header>
-				<main>
+				<main class="mt-[14px]">
 					<form
 						id="form_sign_up"
 						name="form_sign_up"
@@ -41,55 +55,93 @@
 						action="#"
 						onsubmit="alert('Handle Submit'); return false;"
 					>
-						<label for="name">Nome:</label>
+						<label
+							class="block text-[#F2F2F2] text-sm mt-[14px] font-bold"
+							for="name"
+							>Nome:</label
+						>
 						<input
 							id="name"
 							type="text"
 							name="name"
 							placeholder="Nome"
 							required
+							class="w-full block rounded-[4px] p-[12px] text-[#707070] bg-[#F2F2F2] focus:outline-none mt-[8px] mb-[14px]"
 						/>
 
-						<label for="email">Email:</label>
+						<label
+							class="block text-[#F2F2F2] text-sm mt-[14px] font-bold"
+							for="email"
+							>Email:</label
+						>
 						<input
 							id="email"
 							type="email"
 							name="email"
 							placeholder="Email"
 							required
+							class="w-full block rounded-[4px] p-[12px] text-[#707070] bg-[#F2F2F2] focus:outline-none mt-[8px] mb-[14px]"
 						/>
 
-						<label for="password">Senha:</label>
-						<div class="input_wrapper">
+						<label
+							class="block text-[#F2F2F2] text-sm mt-[14px] font-bold"
+							for="password"
+							>Senha:</label
+						>
+						<div class="relative">
 							<input
 								id="password"
 								type="password"
 								name="password"
 								placeholder="Senha"
 								required
+								class="w-full block rounded-[4px] p-[12px] text-[#707070] bg-[#F2F2F2] focus:outline-none mt-[8px] mb-[14px]"
 							/>
-							<button type="button"></button>
+							<button
+								class="absolute right-[12px] top-2/4 -translate-y-1/2"
+								type="button"
+							>
+								<img src="../assets/eye.svg" alt="Ver senha" />
+							</button>
 						</div>
 
-						<label for="confirm_password">Repetir senha:</label>
-						<div class="input_wrapper">
+						<label
+							class="block text-[#F2F2F2] text-sm mt-[14px] font-bold"
+							for="confirm_password"
+							>Repetir senha:</label
+						>
+						<div class="relative">
 							<input
 								id="confirm_password"
 								type="password"
 								name="confirm_password"
 								placeholder="Repetir senha"
 								required
+								class="w-full block rounded-[4px] p-[12px] text-[#707070] bg-[#F2F2F2] focus:outline-none mt-[8px] mb-[14px]"
 							/>
-							<button type="button"></button>
+							<button
+								class="absolute right-[12px] top-2/4 -translate-y-1/2"
+								type="button"
+							>
+								<img src="../assets/eye.svg" alt="Ver senha" />
+							</button>
 						</div>
 
-						<button class="main" type="submit">
+						<button
+							class="w-full p-[12px] bg-[#0D63A5] text-[#F2F2F2] font-bold text-center text-sm rounded-[4px] hover:bg-[#199bff] transition-colors"
+							type="submit"
+						>
 							Cadastrar usuário
 						</button>
 					</form>
 				</main>
-				<footer class="register flex flex-column flex-a-center">
-					<a class="link" href="index.html">Ir para login</a>
+				<div class="bg-divisor h-[1px] w-full mt-[14px]"></div>
+				<footer class="mt-[14px] flex justify-center">
+					<a
+						href="index.html"
+						class="text-[#0D63A5] font-bold underline"
+						>Ir para login</a
+					>
 				</footer>
 			</div>
 		</div>
