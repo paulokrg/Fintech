@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" href="../styles/root.css" />
+		<link rel="stylesheet" href="../styles/loggedIn.css" />
+		<link rel="stylesheet" href="../styles/global.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Fintech - Dashboard</title>
+	</head>
+	<body>
+		<header class="menu flex flex-a-center flex-j-between">
+			<i></i>
+			<h1>Olá, Paulo</h1>
+			<a href="index.html"><img src="../assets/logout.svg" alt="" /></a>
+		</header>
+		<div class="container logged flex flex-column flex-a-center">
+			<h3>Selecione uma opção</h3>
+			<main>
+				<a class="card receipts" href="recebimentos.html">
+					<img src="../assets/receipts_card.png" alt="Gastos" />
+					<div class="infos">
+						<h2>Recebimentos</h2>
+						<small>
+							Visualize e cadastre novos recebimentos.
+						</small>
+					</div>
+				</a>
+				<a class="card spents" href="gastos.html">
+					<img src="../assets/spents_card.png" alt="Gastos" />
+					<div class="infos">
+						<h2>Gastos</h2>
+						<small>Visualize e cadastre novos gastos.</small>
+					</div>
+				</a>
+			</main>
+		</div>
+	</body>
+</html>

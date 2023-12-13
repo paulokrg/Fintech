@@ -1,0 +1,62 @@
+form div.input_wrapper {
+	position: relative;
+}
+
+form div.input_wrapper button {
+	position: absolute;
+	margin: 0px;
+	top: 50%;
+	transform: translateY(-50%);
+	right: var(--item_space_min);
+	width: var(--item_space_med_big);
+	height: var(--item_space_min);
+}
+
+form div.input_wrapper button::before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0px;
+	width: var(--item_space_med_big);
+	height: var(--item_space_min);
+	background-image: url("../assets/eye.svg");
+	background-repeat: no-repeat;
+	background-size: var(--item_space_med_big);
+	background-position: center;
+}
+
+form button {
+	margin-top: var(--item_space_med);
+}
+
+a.link.light {
+	width: fit-content;
+	margin-left: auto;
+	margin-right: auto;
+	font-weight: var(--light);
+	text-transform: capitalize;
+	margin-top: var(--item_space_med);
+}
+
+footer.register {
+	margin-top: var(--item_space_med);
+	gap: var(--item_space_small);
+	padding-top: var(--item_space_med);
+	position: relative;
+}
+
+footer.register a {
+	margin-top: 0px;
+}
+
+footer.register::before {
+	content: "";
+	display: block;
+	width: 100%;
+	height: var(--item_space_tiny);
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	left: 0px;
+	background-image: var(--linear_gradient);
+}

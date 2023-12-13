@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" href="../styles/root.css" />
+		<link rel="stylesheet" href="../styles/loggedIn.css" />
+		<link rel="stylesheet" href="../styles/global.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Fintech - Modal</title>
+	</head>
+	<body>
+		<header class="menu flex flex-a-center flex-j-between">
+			<a href="dashboard.html"><img src="../assets/back.svg" alt="" /></a>
+			<h1>Recebimentos</h1>
+			<i></i>
+		</header>
+		<div class="modal_overlay flex flex-a-center flex-j-center">
+			<section class="modal">
+				<button class="close">
+					<a href="recebimentos.html"
+						><img src="../assets/close.svg" alt="Fechar"
+					/></a>
+				</button>
+				<h1>Cadastro</h1>
+				<p>
+					Cadastre seus recebimentos e gastos para acompanhá-los de
+					forma intuitiva e simplificada.
+				</p>
+				<form id="form_modal" name="form_modal" method="post" action="">
+					<input
+						id="date"
+						type="date"
+						name="date"
+						placeholder="dd/mm/aaaa"
+						required
+					/>
+					<input id="time" type="time" name="time" />
+					<input
+						id="value"
+						type="number"
+						name="value"
+						placeholder="Valor"
+						required
+					/>
+					<select id="category" name="category" required>
+						<option value="" disabled selected hidden>
+							Categoria
+						</option>
+						<option value="salarios">Salários</option>
+						<option value="vendas">Vendas</option>
+						<option value="investimentos">Investimentos</option>
+						<option value="freelance">Freelance</option>
+					</select>
+					<textarea
+						id="description"
+						type="text"
+						name="description"
+						placeholder="Descrição"
+						cols="30"
+						rows="5"
+						required
+					></textarea>
+					<button class="main" type="submit">
+						<a
+							class="flex flex-a-center flex-j-center"
+							href="recebimentos.html"
+						>
+							Salvar
+						</a>
+					</button>
+				</form>
+			</section>
+		</div>
+		<div class="container logged flex flex-column flex-a-center">
+			<h3>Filtrar por categoria</h3>
+			<section class="categories">
+				<button class="tag selected">Salário</button>
+				<button class="tag">Vendas</button>
+				<button class="tag">Investimentos</button>
+				<button class="tag">Freelance</button>
+			</section>
+			<main class="has_footer">
+				<div class="card_data">
+					<small class="gray"> 08/10/2023 </small>
+					<div class="infos_title">
+						<h2>Título do recebimento</h2>
+						<small>
+							Lorem ipsum dolor sit amet, consectetur adipiscing
+							elit.
+						</small>
+					</div>
+					<div class="infos_value">
+						<strong>R$ 500,00</strong>
+						<small> Salário </small>
+					</div>
+				</div>
+				<div class="card_data">
+					<small class="gray"> 08/10/2023 </small>
+					<div class="infos_title">
+						<h2>Título do recebimento</h2>
+						<small>
+							Lorem ipsum dolor sit amet, consectetur adipiscing
+							elit.
+						</small>
+					</div>
+					<div class="infos_value">
+						<strong>R$ 500,00</strong>
+						<small> Salário </small>
+					</div>
+				</div>
+				<div class="card_data">
+					<small class="gray"> 08/10/2023 </small>
+					<div class="infos_title">
+						<h2>Título do recebimento</h2>
+						<small>
+							Lorem ipsum dolor sit amet, consectetur adipiscing
+							elit.
+						</small>
+					</div>
+					<div class="infos_value">
+						<strong>R$ 500,00</strong>
+						<small> Salário </small>
+					</div>
+				</div>
+				<div class="card_data">
+					<small class="gray"> 08/10/2023 </small>
+					<div class="infos_title">
+						<h2>Título do recebimento</h2>
+						<small>
+							Lorem ipsum dolor sit amet, consectetur adipiscing
+							elit.
+						</small>
+					</div>
+					<div class="infos_value">
+						<strong>R$ 500,00</strong>
+						<small> Salário </small>
+					</div>
+				</div>
+				<div class="card_data">
+					<small class="gray"> 08/10/2023 </small>
+					<div class="infos_title">
+						<h2>Título do recebimento</h2>
+						<small>
+							Lorem ipsum dolor sit amet, consectetur adipiscing
+							elit.
+						</small>
+					</div>
+					<div class="infos_value">
+						<strong>R$ 500,00</strong>
+						<small> Salário </small>
+					</div>
+				</div>
+				<div class="card_data">
+					<small class="gray"> 08/10/2023 </small>
+					<div class="infos_title">
+						<h2>Título do recebimento</h2>
+						<small>
+							Lorem ipsum dolor sit amet, consectetur adipiscing
+							elit.
+						</small>
+					</div>
+					<div class="infos_value">
+						<strong>R$ 500,00</strong>
+						<small> Salário </small>
+					</div>
+				</div>
+				<div class="card_data">
+					<small class="gray"> 08/10/2023 </small>
+					<div class="infos_title">
+						<h2>Título do recebimento</h2>
+						<small>
+							Lorem ipsum dolor sit amet, consectetur adipiscing
+							elit.
+						</small>
+					</div>
+					<div class="infos_value">
+						<strong>R$ 500,00</strong>
+						<small> Salário </small>
+					</div>
+				</div>
+				<div class="card_data">
+					<small class="gray"> 08/10/2023 </small>
+					<div class="infos_title">
+						<h2>Título do recebimento</h2>
+						<small>
+							Lorem ipsum dolor sit amet, consectetur adipiscing
+							elit.
+						</small>
+					</div>
+					<div class="infos_value">
+						<strong>R$ 500,00</strong>
+						<small> Salário </small>
+					</div>
+				</div>
+				<div class="card_data">
+					<small class="gray"> 08/10/2023 </small>
+					<div class="infos_title">
+						<h2>Título do recebimento</h2>
+						<small>
+							Lorem ipsum dolor sit amet, consectetur adipiscing
+							elit.
+						</small>
+					</div>
+					<div class="infos_value">
+						<strong>R$ 500,00</strong>
+						<small> Salário </small>
+					</div>
+				</div>
+				<div class="card_data">
+					<small class="gray"> 08/10/2023 </small>
+					<div class="infos_title">
+						<h2>Título do recebimento</h2>
+						<small>
+							Lorem ipsum dolor sit amet, consectetur adipiscing
+							elit.
+						</small>
+					</div>
+					<div class="infos_value">
+						<strong>R$ 500,00</strong>
+						<small> Salário </small>
+					</div>
+				</div>
+			</main>
+			<footer class="container_button_add">
+				<button class="main">
+					<a
+						class="flex flex-a-center flex-j-center"
+						href="./modal.html"
+					>
+						Adicionar recebimento
+					</a>
+				</button>
+			</footer>
+		</div>
+	</body>
+</html>

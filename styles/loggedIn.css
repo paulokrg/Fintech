@@ -1,0 +1,206 @@
+header.menu {
+	width: 100%;
+	background-color: var(--bluenop);
+	padding: var(--item_space_med_big) var(--item_space_min_med);
+	position: sticky;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	z-index: 10;
+}
+
+header.menu a {
+	margin-top: 0px;
+}
+
+.container h3 {
+	margin: var(--item_space_min_med) 0px var(--item_space_simple) 0px;
+	width: 100%;
+	max-width: var(--container_space);
+}
+
+.container main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: var(--item_space_min_med);
+	width: 100%;
+	max-width: var(--container_space);
+}
+
+main.has_footer {
+	padding-bottom: 50px;
+	gap: 0px;
+}
+
+main a {
+	border-radius: var(--border_radius);
+	min-height: var(--card_space);
+	position: relative;
+	overflow: hidden;
+}
+
+main a img {
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+	object-position: center;
+}
+
+main a.card::before {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	background-image: var(--linear_gradient_card);
+	z-index: 1;
+}
+
+.card div.infos {
+	position: absolute;
+	right: var(--item_space_min_med);
+	left: var(--item_space_min_med);
+	bottom: var(--item_space_min_med);
+	z-index: 2;
+}
+
+.card div.infos h2 {
+	font-weight: var(--bold);
+	text-align: left;
+}
+
+.card div.infos small {
+	font-size: var(--detail);
+	font-weight: var(--light);
+}
+
+.container section.categories {
+	width: 100%;
+	max-width: var(--container_space);
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: var(--item_space_med);
+	margin-bottom: var(--item_space_simple);
+}
+
+section.categories button.tag {
+	width: fit-content;
+	background-color: rgba(0, 0, 0, 0);
+	padding: var(--item_space_min_small);
+	border-radius: var(--border_radius);
+	border: var(--border_min) solid var(--whitenop_dark);
+}
+
+section.categories button.tag:hover,
+section.categories button.tag.selected {
+	background-color: var(--bluenop);
+}
+
+main div.card_data {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: var(--item_space_simple);
+	padding: var(--item_space_min_med) 0px;
+	position: relative;
+}
+
+.card_data small {
+	font-weight: var(--light);
+	font-size: var(--small);
+}
+
+.card_data small.gray {
+	color: var(--graynop);
+}
+
+.card_data .infos_title h2 {
+	font-weight: var(--bold);
+	text-align: left;
+}
+
+main div.card_data::before {
+	content: "";
+	display: block;
+	width: 100%;
+	height: var(--item_space_tiny);
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	left: 0px;
+	background-image: var(--linear_gradient);
+}
+
+footer.container_button_add {
+	width: 100%;
+	max-width: var(--container_space);
+	background-color: var(--darknop);
+	padding: var(--item_space_min_med) 0px;
+	position: fixed;
+	z-index: 3;
+	bottom: 0px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+footer.container_button_add::before {
+	content: "";
+	display: block;
+	width: 100%;
+	height: var(--item_space_tiny);
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	left: 0px;
+	background-image: var(--linear_gradient);
+}
+
+div.modal_overlay {
+	width: 100%;
+	height: 100vh;
+	background-color: var(--blackop8);
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	left: 0px;
+	bottom: 0px;
+	z-index: 4;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+.modal_overlay section.modal {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: var(--item_space_med);
+	max-width: var(--container_min);
+	background-color: var(--darknop);
+	padding: var(--item_space_min_med);
+	border-radius: var(--border_radius);
+}
+
+.modal button.close {
+	background-color: rgba(0, 0, 0, 0);
+	align-self: flex-end;
+}
+
+.modal h1 {
+	font-size: var(--subtitle);
+}
+
+.modal p {
+	font-size: var(--detail);
+}
+
+.modal form button {
+	margin-top: var(--item_space_med);
+}
